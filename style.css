@@ -31,6 +31,41 @@ ul {
     transform-origin: left;
   }
 
-  h1 {
-      
-  }
+  carousel {
+    width: 100%;
+    font-family: Trebuchet MS;
+    text-align: center;
+    display: block;
+    padding-top: 1em;
+ }
+  carousel page {
+    display: flex;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    transform: scale(0);
+    margin-top: 35rem;
+    margin-left: 15rem;
+    
+
+ }
+  carousel page div {
+    padding: 3em;
+ }
+  carousel #page1cb:checked ~ #page1 {
+    transform: scale(1);
+ }
+  carousel #page2cb:checked ~ #page2 {
+    transform: scale(1);
+ }
+  carousel #page3cb:checked ~ #page3 {
+    transform: scale(1);
+ }
+  carousel #page4cb:checked ~ #page4 {
+    transform: scale(1);
+ }
+  carousel #page5cb:checked ~ #page5 {
+    transform: scale(1);
+ }
